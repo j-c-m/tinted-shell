@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Night Lion V1 
+# Scheme name: Night Lion V1
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="night-lion-v1"
@@ -13,7 +13,7 @@ color04="26/6a/d7" # Base 0D - Blue
 color05="bb/00/bb" # Base 0E - Magenta
 color06="00/d9/df" # Base 0C - Cyan
 color07="bb/bb/bb" # Base 06 - White
-color08="55/55/55" # Base 02 - Bright Black
+color08="6e/6e/6e" # Base 03 - Bright Black
 color09="ff/55/55" # Base 12 - Bright Red
 color10="55/ff/55" # Base 14 - Bright Green
 color11="ff/ff/55" # Base 13 - Bright Yellow

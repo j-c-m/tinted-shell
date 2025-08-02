@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Ollie 
+# Scheme name: Ollie
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="ollie"
@@ -13,7 +13,7 @@ color04="2c/56/ab" # Base 0D - Blue
 color05="af/84/27" # Base 0E - Magenta
 color06="1f/a5/ab" # Base 0C - Cyan
 color07="8a/8d/ab" # Base 06 - White
-color08="5a/36/25" # Base 02 - Bright Black
+color08="66/4b/46" # Base 03 - Bright Black
 color09="ff/3d/48" # Base 12 - Bright Red
 color10="3b/ff/99" # Base 14 - Bright Green
 color11="ff/5e/1e" # Base 13 - Bright Yellow

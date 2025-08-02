@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Atelier Sulphurpool 
+# Scheme name: Atelier Sulphurpool
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="atelier-sulphurpool"
@@ -13,7 +13,7 @@ color04="3d/8f/d1" # Base 0D - Blue
 color05="66/79/cc" # Base 0E - Magenta
 color06="22/a2/c9" # Base 0C - Cyan
 color07="97/9d/b4" # Base 06 - White
-color08="6b/73/94" # Base 02 - Bright Black
+color08="76/7d/9c" # Base 03 - Bright Black
 color09="c7/6b/29" # Base 12 - Bright Red
 color10="29/32/56" # Base 14 - Bright Green
 color11="5e/66/87" # Base 13 - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Idea 
+# Scheme name: Idea
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="idea"
@@ -13,7 +13,7 @@ color04="43/7e/e6" # Base 0D - Blue
 color05="9d/73/b0" # Base 0E - Magenta
 color06="24/88/86" # Base 0C - Cyan
 color07="17/17/17" # Base 06 - White
-color08="ff/fe/fe" # Base 02 - Bright Black
+color08="c5/c5/c5" # Base 03 - Bright Black
 color09="fc/6f/72" # Base 12 - Bright Red
 color10="98/b6/1b" # Base 14 - Bright Green
 color11="ff/ff/0a" # Base 13 - Bright Yellow

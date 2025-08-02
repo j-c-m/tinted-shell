@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Elemental 
+# Scheme name: Elemental
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="elemental"
@@ -13,7 +13,7 @@ color04="49/7f/7d" # Base 0D - Blue
 color05="7e/4e/2e" # Base 0E - Magenta
 color06="38/7f/58" # Base 0C - Cyan
 color07="80/79/74" # Base 06 - White
-color08="54/54/44" # Base 02 - Bright Black
+color08="5f/5d/50" # Base 03 - Bright Black
 color09="df/50/2a" # Base 12 - Bright Red
 color10="60/e0/6f" # Base 14 - Bright Green
 color11="d6/98/27" # Base 13 - Bright Yellow

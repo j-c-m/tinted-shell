@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Red Planet 
+# Scheme name: Red Planet
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="red-planet"
@@ -13,7 +13,7 @@ color04="69/80/9e" # Base 0D - Blue
 color05="89/64/92" # Base 0E - Magenta
 color06="5b/83/90" # Base 0C - Cyan
 color07="b9/aa/99" # Base 06 - White
-color08="67/67/67" # Base 02 - Bright Black
+color08="7b/77/73" # Base 03 - Bright Black
 color09="b5/52/42" # Base 12 - Bright Red
 color10="86/99/85" # Base 14 - Bright Green
 color11="eb/eb/91" # Base 13 - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Banana Blueberry 
+# Scheme name: Banana Blueberry
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="banana-blueberry"
@@ -13,7 +13,7 @@ color04="22/e8/df" # Base 0D - Blue
 color05="dc/39/69" # Base 0E - Magenta
 color06="55/b6/c1" # Base 0C - Cyan
 color07="f1/f1/f1" # Base 06 - White
-color08="48/51/61" # Base 02 - Bright Black
+color08="72/79/85" # Base 03 - Bright Black
 color09="fd/9e/a1" # Base 12 - Bright Red
 color10="97/c3/78" # Base 14 - Bright Green
 color11="f9/e4/6a" # Base 13 - Bright Yellow

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # tinted-shell (https://github.com/tinted-theming/tinted-shell)
-# Scheme name: Catppuccin Macchiato 
+# Scheme name: Catppuccin Macchiato
 # Scheme author: https://github.com/catppuccin/catppuccin
 # Template author: Tinted Theming (https://github.com/tinted-theming)
 export BASE24_THEME="catppuccin-macchiato"
@@ -13,7 +13,7 @@ color04="8a/ad/f4" # Base 0D - Blue
 color05="c6/a0/f6" # Base 0E - Magenta
 color06="8b/d5/ca" # Base 0C - Cyan
 color07="f4/db/d6" # Base 06 - White
-color08="36/3a/4f" # Base 02 - Bright Black
+color08="49/4d/64" # Base 03 - Bright Black
 color09="ee/99/a0" # Base 12 - Bright Red
 color10="a6/da/95" # Base 14 - Bright Green
 color11="f4/db/d6" # Base 13 - Bright Yellow
