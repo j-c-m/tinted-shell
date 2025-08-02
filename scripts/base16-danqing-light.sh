@@ -8,21 +8,21 @@ export BASE16_THEME=danqing-light
 color00="fc/fe/fd" # Base 00 - Black
 color01="f9/90/6f" # Base 08 - Red
 color02="8a/b3/61" # Base 0B - Green
-color03="f0/c2/39" # Base 0A - Yellow
+color03="ca/69/24" # Base 0F - Brown
 color04="b0/a4/e3" # Base 0D - Blue
 color05="cc/a4/e3" # Base 0E - Magenta
 color06="30/df/f3" # Base 0C - Cyan
 color07="5a/60/5d" # Base 05 - White
 color08="ca/d8/d2" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="b3/8a/61" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="f0/c2/39" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="2d/30/2f" # Base 07 - Bright White
-color16="b3/8a/61" # Base 09
-color17="ca/69/24" # Base 0F
+#color16="b3/8a/61" # Base 09
+#color17="ca/69/24" # Base 0F
 color18="ec/f6/f2" # Base 01
 color19="e0/f0/ef" # Base 02
 color20="9d/a8/a3" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

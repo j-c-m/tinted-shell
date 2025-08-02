@@ -8,21 +8,21 @@ export BASE16_THEME=helios
 color00="1d/20/21" # Base 00 - Black
 color01="d7/26/38" # Base 08 - Red
 color02="88/b9/2d" # Base 0B - Green
-color03="f1/9d/1a" # Base 0A - Yellow
+color03="c8/5e/0d" # Base 0F - Brown
 color04="1e/8b/ac" # Base 0D - Blue
 color05="be/42/64" # Base 0E - Magenta
 color06="1b/a5/95" # Base 0C - Cyan
 color07="d5/d5/d5" # Base 05 - White
 color08="6f/75/79" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="eb/84/13" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="f1/9d/1a" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="e5/e5/e5" # Base 07 - Bright White
-color16="eb/84/13" # Base 09
-color17="c8/5e/0d" # Base 0F
+#color16="eb/84/13" # Base 09
+#color17="c8/5e/0d" # Base 0F
 color18="38/3c/3e" # Base 01
 color19="53/58/5b" # Base 02
 color20="cd/cd/cd" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

@@ -8,21 +8,21 @@ export BASE16_THEME=penumbra-light-contrast-plus
 color00="ff/fd/fb" # Base 00 - Black
 color01="df/7f/78" # Base 08 - Red
 color02="50/b5/84" # Base 0B - Green
-color03="9c/a7/48" # Base 0A - Yellow
+color03="d0/80/b6" # Base 0F - Brown
 color04="61/a3/e6" # Base 0D - Blue
 color05="a4/8f/e1" # Base 0E - Magenta
 color06="00/b3/c2" # Base 0C - Cyan
 color07="63/63/63" # Base 05 - White
 color08="ce/ce/ce" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="ce/90/42" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="9c/a7/48" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="18/1b/1f" # Base 07 - Bright White
-color16="ce/90/42" # Base 09
-color17="d0/80/b6" # Base 0F
+#color16="ce/90/42" # Base 09
+#color17="d0/80/b6" # Base 0F
 color18="ff/f7/ed" # Base 01
 color19="f2/e6/d4" # Base 02
 color20="9e/9e/9e" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

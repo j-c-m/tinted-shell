@@ -8,21 +8,21 @@ export BASE16_THEME=brushtrees-dark
 color00="48/58/67" # Base 00 - Black
 color01="b3/86/86" # Base 08 - Red
 color02="87/b3/86" # Base 0B - Green
-color03="aa/b3/86" # Base 0A - Yellow
+color03="b3/9f/9f" # Base 0F - Brown
 color04="86/8c/b3" # Base 0D - Blue
 color05="b3/86/b2" # Base 0E - Magenta
 color06="86/b3/b3" # Base 0C - Cyan
 color07="b0/c5/c8" # Base 05 - White
 color08="82/99/a1" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="d8/bb/a2" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="aa/b3/86" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="e3/ef/ef" # Base 07 - Bright White
-color16="d8/bb/a2" # Base 09
-color17="b3/9f/9f" # Base 0F
+#color16="d8/bb/a2" # Base 09
+#color17="b3/9f/9f" # Base 0F
 color18="5a/6d/7a" # Base 01
 color19="6d/82/8e" # Base 02
 color20="98/af/b5" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

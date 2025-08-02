@@ -8,21 +8,21 @@ export BASE16_THEME=saga
 color00="05/08/0a" # Base 00 - Black
 color01="ff/d4/e9" # Base 08 - Red
 color02="f7/dd/ff" # Base 0B - Green
-color03="fb/eb/c8" # Base 0A - Yellow
+color03="f6/dd/dd" # Base 0F - Brown
 color04="c9/ff/f7" # Base 0D - Blue
 color05="dc/c3/f9" # Base 0E - Magenta
 color06="c5/ed/c1" # Base 0C - Cyan
 color07="dc/e2/f7" # Base 05 - White
 color08="14/1f/27" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="fb/cb/ae" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="fb/eb/c8" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="cc/d3/fe" # Base 07 - Bright White
-color16="fb/cb/ae" # Base 09
-color17="f6/dd/dd" # Base 0F
+#color16="fb/cb/ae" # Base 09
+#color17="f6/dd/dd" # Base 0F
 color18="0a/10/14" # Base 01
 color19="0f/18/1e" # Base 02
 color20="19/26/30" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

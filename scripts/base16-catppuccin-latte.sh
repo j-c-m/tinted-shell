@@ -8,21 +8,21 @@ export BASE16_THEME=catppuccin-latte
 color00="ef/f1/f5" # Base 00 - Black
 color01="d2/0f/39" # Base 08 - Red
 color02="40/a0/2b" # Base 0B - Green
-color03="df/8e/1d" # Base 0A - Yellow
+color03="dd/78/78" # Base 0F - Brown
 color04="1e/66/f5" # Base 0D - Blue
 color05="88/39/ef" # Base 0E - Magenta
 color06="17/92/99" # Base 0C - Cyan
 color07="4c/4f/69" # Base 05 - White
 color08="bc/c0/cc" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="fe/64/0b" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="df/8e/1d" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="72/87/fd" # Base 07 - Bright White
-color16="fe/64/0b" # Base 09
-color17="dd/78/78" # Base 0F
+#color16="fe/64/0b" # Base 09
+#color17="dd/78/78" # Base 0F
 color18="e6/e9/ef" # Base 01
 color19="cc/d0/da" # Base 02
 color20="ac/b0/be" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

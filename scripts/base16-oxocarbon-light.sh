@@ -8,21 +8,21 @@ export BASE16_THEME=oxocarbon-light
 color00="f2/f4/f8" # Base 00 - Black
 color01="ff/7e/b6" # Base 08 - Red
 color02="0f/62/fe" # Base 0B - Green
-color03="ff/6f/00" # Base 0A - Yellow
+color03="37/47/4f" # Base 0F - Brown
 color04="42/be/65" # Base 0D - Blue
 color05="be/95/ff" # Base 0E - Magenta
 color06="67/3a/b7" # Base 0C - Cyan
 color07="39/39/39" # Base 05 - White
 color08="16/16/16" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="ee/53/96" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="ff/6f/00" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="08/bd/ba" # Base 07 - Bright White
-color16="ee/53/96" # Base 09
-color17="37/47/4f" # Base 0F
+#color16="ee/53/96" # Base 09
+#color17="37/47/4f" # Base 0F
 color18="dd/e1/e6" # Base 01
 color19="52/52/52" # Base 02
 color20="26/26/26" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

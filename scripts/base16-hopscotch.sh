@@ -8,21 +8,21 @@ export BASE16_THEME=hopscotch
 color00="32/29/31" # Base 00 - Black
 color01="dd/46/4c" # Base 08 - Red
 color02="8f/c1/3e" # Base 0B - Green
-color03="fd/cc/59" # Base 0A - Yellow
+color03="b3/35/08" # Base 0F - Brown
 color04="12/90/bf" # Base 0D - Blue
 color05="c8/5e/7c" # Base 0E - Magenta
 color06="14/9b/93" # Base 0C - Cyan
 color07="b9/b5/b8" # Base 05 - White
 color08="79/73/79" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="fd/8b/19" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="fd/cc/59" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="ff/ff/ff" # Base 07 - Bright White
-color16="fd/8b/19" # Base 09
-color17="b3/35/08" # Base 0F
+#color16="fd/8b/19" # Base 09
+#color17="b3/35/08" # Base 0F
 color18="43/3b/42" # Base 01
 color19="5c/54/5b" # Base 02
 color20="98/94/98" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

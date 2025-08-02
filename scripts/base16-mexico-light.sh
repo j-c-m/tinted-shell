@@ -8,21 +8,21 @@ export BASE16_THEME=mexico-light
 color00="f8/f8/f8" # Base 00 - Black
 color01="ab/46/42" # Base 08 - Red
 color02="53/89/47" # Base 0B - Green
-color03="f7/9a/0e" # Base 0A - Yellow
+color03="a1/69/46" # Base 0F - Brown
 color04="7c/af/c2" # Base 0D - Blue
 color05="96/60/9e" # Base 0E - Magenta
 color06="4b/80/93" # Base 0C - Cyan
 color07="38/38/38" # Base 05 - White
 color08="b8/b8/b8" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="dc/96/56" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="f7/9a/0e" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="18/18/18" # Base 07 - Bright White
-color16="dc/96/56" # Base 09
-color17="a1/69/46" # Base 0F
+#color16="dc/96/56" # Base 09
+#color17="a1/69/46" # Base 0F
 color18="e8/e8/e8" # Base 01
 color19="d8/d8/d8" # Base 02
 color20="58/58/58" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

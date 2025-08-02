@@ -8,21 +8,21 @@ export BASE16_THEME=github
 color00="ea/ee/f2" # Base 00 - Black
 color01="fa/45/49" # Base 08 - Red
 color02="2d/a4/4e" # Base 0B - Green
-color03="bf/87/00" # Base 0A - Yellow
+color03="4d/2d/00" # Base 0F - Brown
 color04="21/8b/ff" # Base 0D - Blue
 color05="a4/75/f9" # Base 0E - Magenta
 color06="33/9d/9b" # Base 0C - Cyan
 color07="42/4a/53" # Base 05 - White
 color08="8c/95/9f" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="e1/6f/24" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="bf/87/00" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="1f/23/28" # Base 07 - Bright White
-color16="e1/6f/24" # Base 09
-color17="4d/2d/00" # Base 0F
+#color16="e1/6f/24" # Base 09
+#color17="4d/2d/00" # Base 0F
 color18="d0/d7/de" # Base 01
 color19="af/b8/c1" # Base 02
 color20="6e/77/81" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

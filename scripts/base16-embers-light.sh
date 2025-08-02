@@ -8,21 +8,21 @@ export BASE16_THEME=embers-light
 color00="d1/d6/db" # Base 00 - Black
 color01="57/6d/82" # Base 08 - Red
 color02="6d/82/57" # Base 0B - Green
-color03="57/82/6d" # Base 0A - Yellow
+color03="57/57/82" # Base 0F - Brown
 color04="82/57/6d" # Base 0D - Blue
 color05="6d/57/82" # Base 0E - Magenta
 color06="82/6d/57" # Base 0C - Cyan
 color07="32/3b/43" # Base 05 - White
 color08="75/80/8a" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="57/82/82" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="57/82/6d" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="0f/13/16" # Base 07 - Bright White
-color16="57/82/82" # Base 09
-color17="57/57/82" # Base 0F
+#color16="57/82/82" # Base 09
+#color17="57/57/82" # Base 0F
 color18="ae/b6/be" # Base 01
 color19="90/9a/a3" # Base 02
 color20="47/50/5a" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

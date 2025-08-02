@@ -8,21 +8,21 @@ export BASE16_THEME=tarot
 color00="0e/09/1d" # Base 00 - Black
 color01="c5/32/53" # Base 08 - Red
 color02="a6/8e/5a" # Base 0B - Green
-color03="ff/65/65" # Base 0A - Yellow
+color03="98/4d/51" # Base 0F - Brown
 color04="6e/60/80" # Base 0D - Blue
 color05="a4/57/82" # Base 0E - Magenta
 color06="8c/97/85" # Base 0C - Cyan
 color07="aa/55/6f" # Base 05 - White
 color08="74/31/6b" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="ea/4d/60" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="ff/65/65" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="dc/8f/7c" # Base 07 - Bright White
-color16="ea/4d/60" # Base 09
-color17="98/4d/51" # Base 0F
+#color16="ea/4d/60" # Base 09
+#color17="98/4d/51" # Base 0F
 color18="2a/15/3c" # Base 01
 color19="4b/20/54" # Base 02
 color20="8c/40/6f" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

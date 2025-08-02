@@ -8,21 +8,21 @@ export BASE16_THEME=synth-midnight-light
 color00="dd/df/e0" # Base 00 - Black
 color01="b5/3b/50" # Base 08 - Red
 color02="06/ea/61" # Base 0B - Green
-color03="c9/d3/64" # Base 0A - Yellow
+color03="cd/63/20" # Base 0F - Brown
 color04="03/ae/ff" # Base 0D - Blue
 color05="ea/5c/e2" # Base 0E - Magenta
 color06="42/ff/f9" # Base 0C - Cyan
 color07="28/29/2a" # Base 05 - White
 color08="a3/a5/a6" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="ea/77/0d" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="c9/d3/64" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="05/06/08" # Base 07 - Bright White
-color16="ea/77/0d" # Base 09
-color17="cd/63/20" # Base 0F
+#color16="ea/77/0d" # Base 09
+#color17="cd/63/20" # Base 0F
 color18="cf/d1/d2" # Base 01
 color19="c1/c3/c4" # Base 02
 color20="47/48/49" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

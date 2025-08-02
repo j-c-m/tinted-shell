@@ -8,21 +8,21 @@ export BASE16_THEME=atelier-savanna-light
 color00="ec/f4/ee" # Base 00 - Black
 color01="b1/61/39" # Base 08 - Red
 color02="48/99/63" # Base 0B - Green
-color03="a0/7e/3b" # Base 0A - Yellow
+color03="86/74/69" # Base 0F - Brown
 color04="47/8c/90" # Base 0D - Blue
 color05="55/85/9b" # Base 0E - Magenta
 color06="1c/9a/a0" # Base 0C - Cyan
 color07="52/60/57" # Base 05 - White
 color08="78/87/7d" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="9f/71/3c" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="a0/7e/3b" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="17/1c/19" # Base 07 - Bright White
-color16="9f/71/3c" # Base 09
-color17="86/74/69" # Base 0F
+#color16="9f/71/3c" # Base 09
+#color17="86/74/69" # Base 0F
 color18="df/e7/e2" # Base 01
 color19="87/92/8a" # Base 02
 color20="5f/6d/64" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

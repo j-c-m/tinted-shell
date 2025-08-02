@@ -8,21 +8,21 @@ export BASE16_THEME=summercamp
 color00="1c/18/10" # Base 00 - Black
 color01="e3/51/42" # Base 08 - Red
 color02="5c/eb/5a" # Base 0B - Green
-color03="f2/ff/27" # Base 0A - Yellow
+color03="f6/9b/e7" # Base 0F - Brown
 color04="48/9b/f0" # Base 0D - Blue
 color05="ff/80/80" # Base 0E - Magenta
 color06="5a/eb/bc" # Base 0C - Cyan
 color07="73/6e/55" # Base 05 - White
 color08="50/4b/38" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="fb/a1/1b" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="f2/ff/27" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="f8/f5/de" # Base 07 - Bright White
-color16="fb/a1/1b" # Base 09
-color17="f6/9b/e7" # Base 0F
+#color16="fb/a1/1b" # Base 09
+#color17="f6/9b/e7" # Base 0F
 color18="2a/26/1c" # Base 01
 color19="3a/35/27" # Base 02
 color20="5f/5b/45" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

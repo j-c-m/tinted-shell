@@ -8,21 +8,21 @@ export BASE16_THEME=oceanicnext
 color00="1b/2b/34" # Base 00 - Black
 color01="ec/5f/67" # Base 08 - Red
 color02="99/c7/94" # Base 0B - Green
-color03="fa/c8/63" # Base 0A - Yellow
+color03="ab/79/67" # Base 0F - Brown
 color04="66/99/cc" # Base 0D - Blue
 color05="c5/94/c5" # Base 0E - Magenta
 color06="5f/b3/b3" # Base 0C - Cyan
 color07="c0/c5/ce" # Base 05 - White
 color08="65/73/7e" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="f9/91/57" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="fa/c8/63" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="d8/de/e9" # Base 07 - Bright White
-color16="f9/91/57" # Base 09
-color17="ab/79/67" # Base 0F
+#color16="f9/91/57" # Base 09
+#color17="ab/79/67" # Base 0F
 color18="34/3d/46" # Base 01
 color19="4f/5b/66" # Base 02
 color20="a7/ad/ba" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

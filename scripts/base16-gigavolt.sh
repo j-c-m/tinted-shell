@@ -8,21 +8,21 @@ export BASE16_THEME=gigavolt
 color00="20/21/26" # Base 00 - Black
 color01="ff/66/1a" # Base 08 - Red
 color02="f2/e6/a9" # Base 0B - Green
-color03="ff/dc/2d" # Base 0A - Yellow
+color03="61/87/ff" # Base 0F - Brown
 color04="40/bf/ff" # Base 0D - Blue
 color05="ae/94/f9" # Base 0E - Magenta
 color06="fb/6a/cb" # Base 0C - Cyan
 color07="e9/e7/e1" # Base 05 - White
 color08="a1/d2/e6" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="19/f9/88" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="ff/dc/2d" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="f2/fb/ff" # Base 07 - Bright White
-color16="19/f9/88" # Base 09
-color17="61/87/ff" # Base 0F
+#color16="19/f9/88" # Base 09
+#color17="61/87/ff" # Base 0F
 color18="2d/30/3d" # Base 01
 color19="5a/57/6e" # Base 02
 color20="ca/d3/ff" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

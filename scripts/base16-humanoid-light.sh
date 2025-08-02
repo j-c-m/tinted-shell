@@ -8,21 +8,21 @@ export BASE16_THEME=humanoid-light
 color00="f8/f8/f2" # Base 00 - Black
 color01="b0/15/1a" # Base 08 - Red
 color02="38/8e/3c" # Base 0B - Green
-color03="ff/b6/27" # Base 0A - Yellow
+color03="b2/77/01" # Base 0F - Brown
 color04="00/82/c9" # Base 0D - Blue
 color05="70/0f/98" # Base 0E - Magenta
 color06="00/8e/8e" # Base 0C - Cyan
 color07="23/26/29" # Base 05 - White
 color08="c0/c0/bd" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="ff/3d/00" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="ff/b6/27" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="07/07/08" # Base 07 - Bright White
-color16="ff/3d/00" # Base 09
-color17="b2/77/01" # Base 0F
+#color16="ff/3d/00" # Base 09
+#color17="b2/77/01" # Base 0F
 color18="ef/ef/e9" # Base 01
 color19="de/de/d8" # Base 02
 color20="60/61/5d" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

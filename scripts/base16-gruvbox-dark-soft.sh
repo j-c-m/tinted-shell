@@ -8,21 +8,21 @@ export BASE16_THEME=gruvbox-dark-soft
 color00="32/30/2f" # Base 00 - Black
 color01="fb/49/34" # Base 08 - Red
 color02="b8/bb/26" # Base 0B - Green
-color03="fa/bd/2f" # Base 0A - Yellow
+color03="d6/5d/0e" # Base 0F - Brown
 color04="83/a5/98" # Base 0D - Blue
 color05="d3/86/9b" # Base 0E - Magenta
 color06="8e/c0/7c" # Base 0C - Cyan
 color07="d5/c4/a1" # Base 05 - White
 color08="66/5c/54" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="fe/80/19" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="fa/bd/2f" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="fb/f1/c7" # Base 07 - Bright White
-color16="fe/80/19" # Base 09
-color17="d6/5d/0e" # Base 0F
+#color16="fe/80/19" # Base 09
+#color17="d6/5d/0e" # Base 0F
 color18="3c/38/36" # Base 01
 color19="50/49/45" # Base 02
 color20="bd/ae/93" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

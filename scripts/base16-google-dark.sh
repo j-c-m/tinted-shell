@@ -8,21 +8,21 @@ export BASE16_THEME=google-dark
 color00="1d/1f/21" # Base 00 - Black
 color01="cc/34/2b" # Base 08 - Red
 color02="19/88/44" # Base 0B - Green
-color03="fb/a9/22" # Base 0A - Yellow
+color03="39/71/ed" # Base 0F - Brown
 color04="39/71/ed" # Base 0D - Blue
 color05="a3/6a/c7" # Base 0E - Magenta
 color06="39/71/ed" # Base 0C - Cyan
 color07="c5/c8/c6" # Base 05 - White
 color08="96/98/96" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="f9/6a/38" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="fb/a9/22" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="ff/ff/ff" # Base 07 - Bright White
-color16="f9/6a/38" # Base 09
-color17="39/71/ed" # Base 0F
+#color16="f9/6a/38" # Base 09
+#color17="39/71/ed" # Base 0F
 color18="28/2a/2e" # Base 01
 color19="37/3b/41" # Base 02
 color20="b4/b7/b4" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

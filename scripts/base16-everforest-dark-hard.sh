@@ -8,21 +8,21 @@ export BASE16_THEME=everforest-dark-hard
 color00="27/2e/33" # Base 00 - Black
 color01="e6/7e/80" # Base 08 - Red
 color02="a7/c0/80" # Base 0B - Green
-color03="db/bc/7f" # Base 0A - Yellow
+color03="9d/a9/a0" # Base 0F - Brown
 color04="7f/bb/b3" # Base 0D - Blue
 color05="d6/99/b6" # Base 0E - Magenta
 color06="83/c0/92" # Base 0C - Cyan
 color07="d3/c6/aa" # Base 05 - White
 color08="85/92/89" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="e6/98/75" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="db/bc/7f" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="ff/fb/ef" # Base 07 - Bright White
-color16="e6/98/75" # Base 09
-color17="9d/a9/a0" # Base 0F
+#color16="e6/98/75" # Base 09
+#color17="9d/a9/a0" # Base 0F
 color18="2e/38/3c" # Base 01
 color19="41/4b/50" # Base 02
 color20="9d/a9/a0" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

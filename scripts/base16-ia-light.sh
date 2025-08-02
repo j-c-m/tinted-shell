@@ -8,21 +8,21 @@ export BASE16_THEME=ia-light
 color00="f6/f6/f6" # Base 00 - Black
 color01="9c/5a/02" # Base 08 - Red
 color02="38/78/1c" # Base 0B - Green
-color03="c4/82/18" # Base 0A - Yellow
+color03="8b/6c/37" # Base 0F - Brown
 color04="48/ba/c2" # Base 0D - Blue
 color05="a9/45/98" # Base 0E - Magenta
 color06="2d/6b/b1" # Base 0C - Cyan
 color07="18/18/18" # Base 05 - White
 color08="89/89/89" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="c4/3e/18" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="c4/82/18" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="f8/f8/f8" # Base 07 - Bright White
-color16="c4/3e/18" # Base 09
-color17="8b/6c/37" # Base 0F
+#color16="c4/3e/18" # Base 09
+#color17="8b/6c/37" # Base 0F
 color18="de/de/de" # Base 01
 color19="bd/e5/f2" # Base 02
 color20="76/76/76" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

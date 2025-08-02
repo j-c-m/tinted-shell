@@ -8,21 +8,21 @@ export BASE16_THEME=atelier-sulphurpool-light
 color00="f5/f7/ff" # Base 00 - Black
 color01="c9/49/22" # Base 08 - Red
 color02="ac/97/39" # Base 0B - Green
-color03="c0/8b/30" # Base 0A - Yellow
+color03="9c/63/7a" # Base 0F - Brown
 color04="3d/8f/d1" # Base 0D - Blue
 color05="66/79/cc" # Base 0E - Magenta
 color06="22/a2/c9" # Base 0C - Cyan
 color07="5e/66/87" # Base 05 - White
 color08="89/8e/a4" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="c7/6b/29" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="c0/8b/30" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="20/27/46" # Base 07 - Bright White
-color16="c7/6b/29" # Base 09
-color17="9c/63/7a" # Base 0F
+#color16="c7/6b/29" # Base 09
+#color17="9c/63/7a" # Base 0F
 color18="df/e2/f1" # Base 01
 color19="97/9d/b4" # Base 02
 color20="6b/73/94" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then

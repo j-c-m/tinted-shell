@@ -8,21 +8,21 @@ export BASE16_THEME=primer-light
 color00="fa/fb/fc" # Base 00 - Black
 color01="d7/3a/49" # Base 08 - Red
 color02="28/a7/45" # Base 0B - Green
-color03="ff/d3/3d" # Base 0A - Yellow
+color03="a0/41/00" # Base 0F - Brown
 color04="03/66/d6" # Base 0D - Blue
 color05="ea/4a/aa" # Base 0E - Magenta
 color06="79/b8/ff" # Base 0C - Cyan
 color07="2f/36/3d" # Base 05 - White
 color08="95/9d/a5" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
+color09="f6/6a/0a" # Base 09 - (Orange) Bright Red
 color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
+color11="ff/d3/3d" # Base 0A - Bright Yellow
 color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="1b/1f/23" # Base 07 - Bright White
-color16="f6/6a/0a" # Base 09
-color17="a0/41/00" # Base 0F
+#color16="f6/6a/0a" # Base 09
+#color17="a0/41/00" # Base 0F
 color18="e1/e4/e8" # Base 01
 color19="d1/d5/da" # Base 02
 color20="44/4d/56" # Base 04
@@ -74,12 +74,12 @@ put_template 14 "$color14"
 put_template 15 "$color15"
 
 # 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
+#put_template 16 "$color16"
+#put_template 17 "$color17"
+put_template 236 "$color18"
+put_template 238 "$color19"
+put_template 243 "$color20"
+put_template 253 "$color21"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
