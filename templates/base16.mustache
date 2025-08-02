@@ -21,12 +21,10 @@ color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="{{base07-hex-r}}/{{base07-hex-g}}/{{base07-hex-b}}" # Base 07 - Bright White
-#color16="{{base09-hex-r}}/{{base09-hex-g}}/{{base09-hex-b}}" # Base 09
-#color17="{{base0F-hex-r}}/{{base0F-hex-g}}/{{base0F-hex-b}}" # Base 0F
-color18="{{base01-hex-r}}/{{base01-hex-g}}/{{base01-hex-b}}" # Base 01
-color19="{{base02-hex-r}}/{{base02-hex-g}}/{{base02-hex-b}}" # Base 02
-color20="{{base04-hex-r}}/{{base04-hex-g}}/{{base04-hex-b}}" # Base 04
-color21="{{base06-hex-r}}/{{base06-hex-g}}/{{base06-hex-b}}" # Base 06
+color236="{{base01-hex-r}}/{{base01-hex-g}}/{{base01-hex-b}}" # Base 01
+color238="{{base02-hex-r}}/{{base02-hex-g}}/{{base02-hex-b}}" # Base 02
+color243="{{base04-hex-r}}/{{base04-hex-g}}/{{base04-hex-b}}" # Base 04
+color253="{{base06-hex-r}}/{{base06-hex-g}}/{{base06-hex-b}}" # Base 06
 color_foreground="{{base05-hex-r}}/{{base05-hex-g}}/{{base05-hex-b}}" # Base 05
 color_background="{{base00-hex-r}}/{{base00-hex-g}}/{{base00-hex-b}}" # Base 00
 
@@ -76,10 +74,10 @@ put_template 15 "$color15"
 # 256 color space
 #put_template 16 "$color16"
 #put_template 17 "$color17"
-put_template 236 "$color18"
-put_template 238 "$color19"
-put_template 243 "$color20"
-put_template 253 "$color21"
+put_template 236 "$color236"
+put_template 238 "$color238"
+put_template 243 "$color243"
+put_template 253 "$color253"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
@@ -122,12 +120,10 @@ unset color12
 unset color13
 unset color14
 unset color15
-unset color16
-unset color17
-unset color18
-unset color19
-unset color20
-unset color21
+unset color236
+unset color238
+unset color243
+unset color253
 unset color_foreground
 unset color_background
 
