@@ -24,25 +24,24 @@ case "$theme_name" in
       base00 \
       base08 \
       base0B \
-      base0A \
+      base0F \
       base0D \
       base0E \
       base0C \
       base05 \
       base03 \
-      base08 \
+      base09 \
       base0B \
       base0A \
       base0D \
       base0E \
       base0C \
       base07 \
-      base09 \
-      base0F \
       base01 \
       base02 \
       base04 \
-      base06";;
+      base06"
+    colorlist="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 234 238 243 253";;
   "base24"*) 
     color_variables="\
       base00 \
@@ -53,7 +52,7 @@ case "$theme_name" in
       base0E \
       base0C \
       base06 \
-      base02 \
+      base03 \
       base12 \
       base14 \
       base13 \
@@ -66,7 +65,8 @@ case "$theme_name" in
       base01 \
       base02 \
       base04 \
-      base06";;
+      base06"
+    colorlist="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21";;
 *) echo "Theme name should start with the scheme system, eg \"base16-oceanicnext\" or \"base24-chalk\": $theme_name" && exit 1 ;;
 esac
 
@@ -89,20 +89,20 @@ ansi_labels="\
   Bright_White"
 
 set -- $color_variables
-i=0
-while [ $i -lt 22 ]; do
+b=0
+for i in $colorlist; do
   color_variable="color$(printf "%02d" $i)"
   eval current_color=\$$color_variable
   current_color=$(printf "%s" "$current_color" | tr 'a-f' 'A-F' | tr -d '/') # POSIX-compliant uppercase & remove slashes
   
   # Fetching the color name and ANSI label based on position
-  base16_color_name=$(printf "%s\n" $color_variables | sed -n "$((i + 1))p")
+  base16_color_name=$(printf "%s\n" $color_variables | sed -n "$((b + 1))p")
   ansi_label=$(printf "%s\n" $ansi_labels | sed -n "$((i + 1))p")
   
   # Displaying the color block
   block=$(printf "\033[48;5;%dm___________________________" $i)
-  foreground=$(printf "\033[38;5;%dm%s" $i "$color_variable")
+  foreground=$(printf "\033[38;5;%dm%-8s" $i "$color_variable")
   printf "%s %s %s %-30s %s\033[0m\n" "$foreground" "$base16_color_name" "${current_color:-space}" "${ansi_label:-""}" "$block"
   
-  i=$((i + 1))
+  b=$((b + 1))
 done
