@@ -21,12 +21,10 @@ color12="$color04" # Base 0D - Bright Blue
 color13="$color05" # Base 0E - Bright Magenta
 color14="$color06" # Base 0C - Bright Cyan
 color15="bb/aa/dd" # Base 07 - Bright White
-#color16="91/88/89" # Base 09
-#color17="59/32/5c" # Base 0F
-color18="10/03/23" # Base 01
-color19="3e/2d/5c" # Base 02
-color20="be/bc/bf" # Base 04
-color21="ed/ea/ef" # Base 06
+color236="10/03/23" # Base 01
+color238="3e/2d/5c" # Base 02
+color243="be/bc/bf" # Base 04
+color253="ed/ea/ef" # Base 06
 color_foreground="de/dc/df" # Base 05
 color_background="27/1c/3a" # Base 00
 
@@ -76,10 +74,10 @@ put_template 15 "$color15"
 # 256 color space
 #put_template 16 "$color16"
 #put_template 17 "$color17"
-put_template 236 "$color18"
-put_template 238 "$color19"
-put_template 243 "$color20"
-put_template 253 "$color21"
+put_template 236 "$color236"
+put_template 238 "$color238"
+put_template 243 "$color243"
+put_template 253 "$color253"
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
@@ -122,12 +120,10 @@ unset color12
 unset color13
 unset color14
 unset color15
-unset color16
-unset color17
-unset color18
-unset color19
-unset color20
-unset color21
+unset color236
+unset color238
+unset color243
+unset color253
 unset color_foreground
 unset color_background
 
