@@ -55,7 +55,7 @@ It has grown a lot and we decided to build a more robust theming manager
 tool, written in Rust, called [Tinty]. At first we were unsure whether
 it was going to be part of this repository or not, but since it wasn't
 directory related to tinted-shell (much like profile_helper isn't very
-related) we decided to move it to its own repository. 
+related) we decided to move it to its own repository.
 
 With [Tinty] you can switch your shell theme, or any other base16,
 base24 or Tinted Theming theme, by running a single command, eg: `tinty
@@ -73,28 +73,7 @@ applications, or perhaps you just want to play around with colors
 yourself. You can access these colors by having them set as environment
 variables.
 
-#### Base16
-
-Add `export TINTED_SHELL_ENABLE_BASE16_VARS=1` to your `.*rc` file and make
-sure the variable is set before running the theme script to enable this
-feature.
-
-This feature enables env vars `BASE16_COLOR_01_HEX` to
-`BASE16_COLOR_0F_HEX`. Have a look at the [Base16 Styling Guidelines]
-for more styling information.
-
-#### Base24
-
-Add `export TINTED_SHELL_ENABLE_BASE24_VARS=1` to your `.*rc` file and make
-sure the variable is set before running the theme script to enable this
-feature.
-
-This feature enables env vars `BASE24_COLOR_01_HEX` to
-`BASE24_COLOR_0F_HEX`. Have a look at the [Base24 Styling Guidelines]
-for more styling information.
-
-This feature enables env vars `BASE16_COLOR_01_HEX` to
-`BASE16_COLOR_0F_HEX`.
+Colors are exported in env vars `TINTED_COLOR_00_RGB` to `TINTED_COLOR_017_RGB`.
 
 ## Troubleshooting
 

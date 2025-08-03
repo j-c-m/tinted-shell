@@ -13,7 +13,7 @@ theme_path="$(dirname "$0")/scripts/$theme_name.sh"
 
 if [ -f "$theme_path" ]; then
   . "$theme_path"
-  eval "$(awk '/^color00=/,/^$/ {print}' "$theme_path" | sed 's/#.*//')"
+  eval "$(awk '/^color[0-9][0-9]=/,/^$/ {print}' "$theme_path" | sed 's/#.*//')"
 else
   printf "No theme file %s found\n" "$theme_path"
 fi
