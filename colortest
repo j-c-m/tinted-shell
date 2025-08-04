@@ -100,8 +100,10 @@ while [ $i -lt 22 ]; do
   ansi_label=$(printf "%s\n" $ansi_labels | sed -n "$((i + 1))p")
 
   # Displaying the color block
-  block=$(printf "\033[48;5;%dm___________________________" $i)
-  foreground=$(printf "\033[38;5;%dm%s" $i "$color_variable")
+  rgb=$(printf "%s\n" "$current_color" | awk '{printf "%d;%d;%d", "0x" substr($0,1,2), "0x" substr($0,3,2), "0x" substr($0,5,2)}')
+  block=$(printf "\033[48;5;%dm\033[48;2;%sm___________________________" $i "$rgb")
+  foreground=$(printf "\033[38;5;%dm\033[38;2;%sm%s" $i "$rgb" "$color_variable")
+
   printf "%s %s %s %-30s %s\033[0m\n" "$foreground" "$base16_color_name" "${current_color:-space}" "${ansi_label:-""}" "$block"
 
   i=$((i + 1))
