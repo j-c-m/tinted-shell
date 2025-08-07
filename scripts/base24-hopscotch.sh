@@ -3,7 +3,11 @@
 # Scheme name: Hopscotch
 # Scheme author: FredHappyface (https://github.com/fredHappyface)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
-export BASE24_THEME="hopscotch"
+export TINTED_THEME="base24-hopscotch"
+
+if [ "base24" = "base16" ]; then
+  export BASE16_THEME="hopscotch"
+fi
 
 color00="32/29/31" # Base 00 - Black
 color01="dd/46/4c" # Base 08 - Red
@@ -86,7 +90,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   put_template_custom Pm 322931 # cursor text
 else
   put_template_var 10 "$color_foreground"
-  if [ "$BASE24_SHELL_SET_BACKGROUND" != false ]; then
+  if [ "$TINTED_SHELL_SET_BACKGROUND" != false ]; then
     put_template_var 11 "$color_background"
     if [ "${TERM%%-*}" = "rxvt" ]; then
       put_template_var 708 "$color_background" # internal border (rxvt)
@@ -114,40 +118,46 @@ unset color11
 unset color12
 unset color13
 unset color14
+unset color15
 unset color16
 unset color17
 unset color18
 unset color19
 unset color20
 unset color21
-unset color15
 unset color_foreground
 unset color_background
 
-# Optionally export variables
-if [ -n "$TINTED_SHELL_ENABLE_BASE24_VARS" ]; then
-  export BASE24_COLOR_00_HEX="322931"
-  export BASE24_COLOR_01_HEX="322931"
-  export BASE24_COLOR_02_HEX="797379"
-  export BASE24_COLOR_03_HEX="898388"
-  export BASE24_COLOR_04_HEX="999498"
-  export BASE24_COLOR_05_HEX="a9a4a8"
-  export BASE24_COLOR_06_HEX="b9b5b8"
-  export BASE24_COLOR_07_HEX="ffffff"
-  export BASE24_COLOR_08_HEX="dd464c"
-  export BASE24_COLOR_09_HEX="fdcc59"
-  export BASE24_COLOR_0A_HEX="989498"
-  export BASE24_COLOR_0B_HEX="8fc13e"
-  export BASE24_COLOR_0C_HEX="149b93"
-  export BASE24_COLOR_0D_HEX="1290bf"
-  export BASE24_COLOR_0E_HEX="c85e7c"
-  export BASE24_COLOR_0F_HEX="6e2326"
-  export BASE24_COLOR_10_HEX="504c50"
-  export BASE24_COLOR_11_HEX="282628"
-  export BASE24_COLOR_12_HEX="fd8b19"
-  export BASE24_COLOR_13_HEX="5c545b"
-  export BASE24_COLOR_14_HEX="433b42"
-  export BASE24_COLOR_15_HEX="b33508"
-  export BASE24_COLOR_16_HEX="989498"
-  export BASE24_COLOR_17_HEX="d5d3d5"
-fi
+export TINTED_COLOR_00_RGB="322931"
+export TINTED_COLOR_01_RGB="322931"
+export TINTED_COLOR_02_RGB="797379"
+export TINTED_COLOR_03_RGB="898388"
+export TINTED_COLOR_04_RGB="999498"
+export TINTED_COLOR_05_RGB="a9a4a8"
+export TINTED_COLOR_06_RGB="b9b5b8"
+export TINTED_COLOR_07_RGB="ffffff"
+export TINTED_COLOR_08_RGB="dd464c"
+export TINTED_COLOR_09_RGB="fdcc59"
+export TINTED_COLOR_0A_RGB="989498"
+export TINTED_COLOR_0B_RGB="8fc13e"
+export TINTED_COLOR_0C_RGB="149b93"
+export TINTED_COLOR_0D_RGB="1290bf"
+export TINTED_COLOR_0E_RGB="c85e7c"
+export TINTED_COLOR_0F_RGB="6e2326"
+export TINTED_COLOR_10_RGB="504c50"
+export TINTED_COLOR_11_RGB="282628"
+export TINTED_COLOR_12_RGB="fd8b19"
+export TINTED_COLOR_13_RGB="5c545b"
+export TINTED_COLOR_14_RGB="433b42"
+export TINTED_COLOR_15_RGB="b33508"
+export TINTED_COLOR_16_RGB="989498"
+export TINTED_COLOR_17_RGB="d5d3d5"
+
+export TINTED_COLOR_BRIGHT08_RGB="fd8b19"
+export TINTED_COLOR_BRIGHT09_RGB="fed983"
+export TINTED_COLOR_BRIGHT0A_RGB="5c545b"
+export TINTED_COLOR_BRIGHT0B_RGB="433b42"
+export TINTED_COLOR_BRIGHT0C_RGB="b33508"
+export TINTED_COLOR_BRIGHT0D_RGB="989498"
+export TINTED_COLOR_BRIGHT0E_RGB="d5d3d5"
+export TINTED_COLOR_BRIGHT0F_RGB="b3393e"

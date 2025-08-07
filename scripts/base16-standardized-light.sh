@@ -3,7 +3,11 @@
 # Scheme name: standardized-light
 # Scheme author: ali (https://github.com/ali-githb/base16-standardized-scheme)
 # Template author: Tinted Theming (https://github.com/tinted-theming)
-export BASE16_THEME=standardized-light
+export TINTED_THEME="base16-standardized-light"
+
+if [ "base16" = "base16" ]; then
+  export BASE16_THEME="standardized-light"
+fi
 
 color00="ff/ff/ff" # Base 00 - Black
 color01="d0/3e/3e" # Base 08 - Red
@@ -14,12 +18,12 @@ color05="9e/57/c2" # Base 0E - Magenta
 color06="00/99/8f" # Base 0C - Cyan
 color07="44/44/44" # Base 05 - White
 color08="76/76/76" # Base 03 - Bright Black
-color09="$color01" # Base 08 - Bright Red
-color10="$color02" # Base 0B - Bright Green
-color11="$color03" # Base 0A - Bright Yellow
-color12="$color04" # Base 0D - Bright Blue
-color13="$color05" # Base 0E - Bright Magenta
-color14="$color06" # Base 0C - Bright Cyan
+color09="ad/1e/1e" # Base 12 - Bright Red
+color10="21/6a/11" # Base 14 - Bright Green
+color11="82/62/00" # Base 13 - Bright Yellow
+color12="1c/55/9d" # Base 16 - Bright Blue
+color13="7e/2a/a9" # Base 17 - Bright Magenta
+color14="00/73/6b" # Base 15 - Bright Cyan
 color15="22/22/22" # Base 07 - Bright White
 color16="d7/69/1d" # Base 09
 color17="89/50/25" # Base 0F
@@ -29,6 +33,7 @@ color20="76/76/76" # Base 04
 color21="33/33/33" # Base 06
 color_foreground="44/44/44" # Base 05
 color_background="ff/ff/ff" # Base 00
+
 
 if [ -z "$TTY" ] && ! TTY=$(tty); then
   put_template() { true; }
@@ -73,14 +78,6 @@ put_template 13 "$color13"
 put_template 14 "$color14"
 put_template 15 "$color15"
 
-# 256 color space
-put_template 16 "$color16"
-put_template 17 "$color17"
-put_template 18 "$color18"
-put_template 19 "$color19"
-put_template 20 "$color20"
-put_template 21 "$color21"
-
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
@@ -93,7 +90,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   put_template_custom Pm ffffff # cursor text
 else
   put_template_var 10 "$color_foreground"
-  if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
+  if [ "$TINTED_SHELL_SET_BACKGROUND" != false ]; then
     put_template_var 11 "$color_background"
     if [ "${TERM%%-*}" = "rxvt" ]; then
       put_template_var 708 "$color_background" # internal border (rxvt)
@@ -131,22 +128,36 @@ unset color21
 unset color_foreground
 unset color_background
 
-# Optionally export variables
-if [ -n "$TINTED_SHELL_ENABLE_BASE16_VARS" ] || [ -n "$BASE16_SHELL_ENABLE_VARS" ]; then
-  export BASE16_COLOR_00_HEX="ffffff"
-  export BASE16_COLOR_01_HEX="eeeeee"
-  export BASE16_COLOR_02_HEX="cccccc"
-  export BASE16_COLOR_03_HEX="767676"
-  export BASE16_COLOR_04_HEX="767676"
-  export BASE16_COLOR_05_HEX="444444"
-  export BASE16_COLOR_06_HEX="333333"
-  export BASE16_COLOR_07_HEX="222222"
-  export BASE16_COLOR_08_HEX="d03e3e"
-  export BASE16_COLOR_09_HEX="d7691d"
-  export BASE16_COLOR_0A_HEX="ad8200"
-  export BASE16_COLOR_0B_HEX="31861f"
-  export BASE16_COLOR_0C_HEX="00998f"
-  export BASE16_COLOR_0D_HEX="3173c5"
-  export BASE16_COLOR_0E_HEX="9e57c2"
-  export BASE16_COLOR_0F_HEX="895025"
-fi
+export TINTED_COLOR_00_RGB="ffffff"
+export TINTED_COLOR_01_RGB="eeeeee"
+export TINTED_COLOR_02_RGB="cccccc"
+export TINTED_COLOR_03_RGB="767676"
+export TINTED_COLOR_04_RGB="767676"
+export TINTED_COLOR_05_RGB="444444"
+export TINTED_COLOR_06_RGB="333333"
+export TINTED_COLOR_07_RGB="222222"
+export TINTED_COLOR_08_RGB="d03e3e"
+export TINTED_COLOR_09_RGB="d7691d"
+export TINTED_COLOR_0A_RGB="ad8200"
+export TINTED_COLOR_0B_RGB="31861f"
+export TINTED_COLOR_0C_RGB="00998f"
+export TINTED_COLOR_0D_RGB="3173c5"
+export TINTED_COLOR_0E_RGB="9e57c2"
+export TINTED_COLOR_0F_RGB="895025"
+export TINTED_COLOR_10_RGB="ffffff"
+export TINTED_COLOR_11_RGB="ffffff"
+export TINTED_COLOR_12_RGB="ad1e1e"
+export TINTED_COLOR_13_RGB="826200"
+export TINTED_COLOR_14_RGB="216a11"
+export TINTED_COLOR_15_RGB="00736b"
+export TINTED_COLOR_16_RGB="1c559d"
+export TINTED_COLOR_17_RGB="7e2aa9"
+
+export TINTED_COLOR_BRIGHT08_RGB="ad1e1e"
+export TINTED_COLOR_BRIGHT09_RGB="a74e10"
+export TINTED_COLOR_BRIGHT0A_RGB="826200"
+export TINTED_COLOR_BRIGHT0B_RGB="216a11"
+export TINTED_COLOR_BRIGHT0C_RGB="00736b"
+export TINTED_COLOR_BRIGHT0D_RGB="1c559d"
+export TINTED_COLOR_BRIGHT0E_RGB="7e2aa9"
+export TINTED_COLOR_BRIGHT0F_RGB="6e3b15"
