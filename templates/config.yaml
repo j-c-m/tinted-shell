@@ -1,3 +1,3 @@
 tinted-shell:
-    supported-systems: [base16, base24]
+    supported-systems: [ansi8, base16, base24]
     filename: scripts/{{ scheme-system }}-{{ scheme-slug }}.sh
